@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Prata</title>
+    <style>
+        body {
+            background-color: black; /* Fundo preto */
+            color: white; /* Texto em branco */
+            font-family: Arial, sans-serif; /* Fonte padrão */
+            margin: 0; /* Remove margens padrão */
+            padding: 20px; /* Adiciona padding ao corpo */
+        }
+        h1, h3 {
+            text-align: center;
+        }
+        .item-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
+            gap: 20px; /* Espaço entre os itens */
+            max-width: 400px; /* Largura máxima da lista */
+            margin: 0 auto; /* Centraliza a lista */
+            list-style-type: none; /* Remove os marcadores da lista */
+            padding: 0;
+        }
+        .item-list li {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        .item-list a {
+            color: inherit; /* Mantém a cor do texto padrão */
+            text-decoration: none; /* Remove o sublinhado */
+            transition: transform 0.3s; /* Adiciona transição ao efeito de hover */
+        }
+        .item-list a:hover {
+            transform: scale(1.05); /* Aumenta ligeiramente o item ao passar o mouse */
+        }
+        .item-list img {
+            width: 100px; /* Largura da imagem */
+            height: 100px; /* Altura da imagem */
+            object-fit: cover; /* Ajusta a imagem para caber dentro do espaço */
+            border-radius: 8px; /* Bordas arredondadas */
+        }
+        .item-name {
+            margin-top: 8px; /* Espaço entre a imagem e o nome */
+        }
+    </style>
+</head>
+<body>
+    <h1>LOJA</h1>
+    <h3>Itens Vendidos</h3>
+    <ul class="item-list">
+        <li>
+            <a href="https://example.com/colar" target="_blank">
+                <img src="colar-prata.png" alt="Colar de Prata">
+                <div class="item-name">Colares(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+            </a>
+        </li>
+        <li>
+            <a href="https://example.com/brinco" target="_blank">
+                <img src="brinco-prata.png" alt="Brinco de Prata">
+                <div class="item-name">Brincos(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+            </a>
+        </li>
+        <li>
+            <a href="https://example.com/anel" target="_blank">
+                <img src="anel-prata.png" alt="Anel de Prata">
+                <div class="item-name">Anéis(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+            </a>
+        </li>
+        <li>
+            <a href="Pulseiras/Pulseira.html" target="_blank">
+                <img src="pulseira-prata.jfif" alt="Pulseira de Prata">
+                <div class="item-name">Pulseiras(Funcionando)</div>
+            </a>
+        </li>
+        <li>
+            <a href="https://example.com/gargantilha" target="_blank">
+                <img src="gargantilha-prata.png" alt="Gargantilha de Prata">
+                <div class="item-name">Gargantilhas(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+            </a>
+        </li>
+        <li>
+            <a href="https://example.com/masculino" target="_blank">
+                <img src="masculino-prata.jfif" alt="masculino-prata">
+                <div class="item-name">Linha-Masculina(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
