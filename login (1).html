@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: black; /* Fundo preto */
+            color: white; /* Texto branco */
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container img {
+            width: 475px; /* Largura das imagens */
+            height: 675px;
+            margin: 0 20px;
+        }
+
+        form {
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 250px;
+            height: 30px;
+            background-color: #333; /* Fundo do campo de input escuro */
+            color: white; /* Texto branco nos campos de input */
+            border: 1px solid #555;
+            padding: 5px;
+        }
+
+        input::placeholder {
+            color: #ccc; /* Cor do placeholder */
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Imagem à esquerda -->
+        <img src="Pratinha.webp" alt="Imagem à esquerda">
+        
+        <form>
+            <h3>Login</h3>
+            <input type="text" placeholder="Login" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <input type="submit" onclick="logar(); return false" value="Entrar">
+        </form>
+        
+        <!-- Imagem à direita -->
+        <img src="Pratão.webp" alt="Imagem à direita">
+    </div>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin") {
+                alert('Sucesso');
+                location.href = "home.html";
+            } else {
+                alert('Usuário ou senha incorretos');
+            }
+        }
+    </script>
+
+</body>
+</html>
