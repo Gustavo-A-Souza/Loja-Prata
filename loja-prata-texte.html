@@ -15,6 +15,22 @@
         h1, h3 {
             text-align: center;
         }
+        .login-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-button:hover {
+            background-color: #777;
+        }
         .item-list {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 itens por linha */
@@ -48,25 +64,29 @@
     </style>
 </head>
 <body>
+    <!-- Botão de Login no canto superior direito -->
+    <button class="login-button" onclick="window.location.href='login (1).html'">Login</button>
+
     <h1>LOJA</h1>
     <h3>Itens Vendidos</h3>
+
     <ul class="item-list">
         <li>
             <a href="https://example.com/colar" target="_blank">
                 <img src="colar-prata.png" alt="Colar de Prata">
-                <div class="item-name">Colares(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+                <div class="item-name">Colares(WIP)</div>
             </a>
         </li>
         <li>
             <a href="https://example.com/brinco" target="_blank">
                 <img src="brinco-prata.png" alt="Brinco de Prata">
-                <div class="item-name">Brincos(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+                <div class="item-name">Brincos(WIP)</div>
             </a>
         </li>
         <li>
             <a href="https://example.com/anel" target="_blank">
                 <img src="anel-prata.png" alt="Anel de Prata">
-                <div class="item-name">Anéis(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+                <div class="item-name">Anéis(WIP)</div>
             </a>
         </li>
         <li>
@@ -78,13 +98,13 @@
         <li>
             <a href="https://example.com/gargantilha" target="_blank">
                 <img src="gargantilha-prata.png" alt="Gargantilha de Prata">
-                <div class="item-name">Gargantilhas(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+                <div class="item-name">Gargantilhas(WIP)</div>
             </a>
         </li>
         <li>
             <a href="https://example.com/masculino" target="_blank">
                 <img src="masculino-prata.jfif" alt="masculino-prata">
-                <div class="item-name">Linha-Masculina(WIP)</div> <!--Work In Progress|Sendo Produzido--> 
+                <div class="item-name">Linha-Masculina(WIP)</div>
             </a>
         </li>
     </ul>
